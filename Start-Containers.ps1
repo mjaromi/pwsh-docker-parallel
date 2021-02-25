@@ -3,7 +3,7 @@ function Start-Containers
     [CmdletBinding()]
     param(
         [string] $containerImage = 'alpine:latest',
-        [string] $containerMemory = '6MB', # Minimum memory limit allowed is 4MB.
+        [string] $containerMemory = '6MB', # Minimum memory limit allowed is 6MB.
         [string] $containerNamePrefix = 'test_container',
         [int] $numberOfContainers = 100,
         [int] $throttleLimit = $([int]$env:NUMBER_OF_PROCESSORS+1)
